@@ -28,7 +28,6 @@ main {
 
 .line-input {
     position: relative;
-    display: inline-block;
 }
 
 .line-input input {
@@ -43,9 +42,7 @@ main {
 }
 
 .line-input input:focus {
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 2px solid #fff;
 }
 
 .line-input input:focus + .focus-line {
@@ -53,7 +50,6 @@ main {
 }
 
 .line-input .focus-line {
-    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -61,11 +57,11 @@ main {
     height: 2px;
     background: #2196f3;
     transform: translateX(-50%);
+    transition: 0.3s all ease;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    transition: 0.3s all ease;
     -webkit-transition: 0.3s all ease;
     -moz-transition: 0.3s all ease;
     -ms-transition: 0.3s all ease;
