@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: #2d7cde;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 1.4rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 14rem;
+}
+
+/* Line Input */
+
+.line-input {
+    position: relative;
+    display: inline-block;
+}
+
+.line-input input {
+    padding: 0.375rem 0.75rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+}
+
+.line-input input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.line-input input:focus + .focus-line {
+    width: 100%;
+}
+
+.line-input .focus-line {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #2196f3;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+/* ->Line Input */
